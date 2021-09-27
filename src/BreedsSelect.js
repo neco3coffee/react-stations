@@ -15,6 +15,7 @@ export function BreedsSelect(props) {
   ))
   const selectedUrls = props.selectedUrls
   const Breedimgs = selectedUrls.map((selectedUrl, index) => (
+    // eslint-disable-next-line react/jsx-key
     <div className="flex-item">
       <div className="image-wrap">
         <img src={selectedUrl} key={index} className="photo"></img>
