@@ -11,20 +11,20 @@ describe('<BreedsSelect />', () => {
   window.fetch = fetch
   fetch.mockImplementation(fetchMock)
 
-  // it('exists', async () => {
-  //   const { BreedsSelect } = require('../src/BreedsSelect')
-  //   expect(BreedsSelect).toBeTruthy()
-  //   await act(async () => {
-  //     renderer.create(<BreedsSelect breeds={breeds} />)
-  //   })
-  // })
+  it('exists', async () => {
+    const { BreedsSelect } = require('../src/BreedsSelect')
+    expect(BreedsSelect).toBeTruthy()
+    await act(async () => {
+      renderer.create(<BreedsSelect breeds={breeds} />)
+    })
+  })
 
-  // it('has `<select>` and `<option>` tags', async () => {
-  //   const { BreedsSelect } = require('../src/BreedsSelect')
-  //   const res = await createAsync(<BreedsSelect breeds={breeds} />)
-  //   expect(res.root.findAllByType('select').length).not.toBe(0)
-  //   expect(res.root.findAllByType('option').length).not.toBe(0)
-  // })
+  it('has `<select>` and `<option>` tags', async () => {
+    const { BreedsSelect } = require('../src/BreedsSelect')
+    const res = await createAsync(<BreedsSelect breeds={breeds} />)
+    expect(res.root.findAllByType('select').length).not.toBe(0)
+    expect(res.root.findAllByType('option').length).not.toBe(0)
+  })
 })
 
 describe('<App />', () => {
