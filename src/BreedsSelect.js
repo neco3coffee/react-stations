@@ -8,16 +8,16 @@ export function BreedsSelect(props) {
   const handleChange = props.handleChange
   const selectedBreed = props.selectedBreed
   const showBreeds = props.showBreeds
-  const breedsItems = Object.keys(breeds).map((breeds, index) => (
-    <option key={index} value={breeds}>
-      {breeds}
+  const breedsItems = Object.keys(breeds).map((breed, index) => (
+    <option key={index} value={breed}>
+      {breed}
     </option>
   ))
   const selectedUrls = props.selectedUrls
-  const Breedimgs = selectedUrls.map((selectedUrls, index) => (
+  const Breedimgs = selectedUrls.map((selectedUrl, index) => (
     <div className="flex-item">
       <div className="image-wrap">
-        <img src={selectedUrls} key={index} className="photo"></img>
+        <img src={selectedUrl} key={index} className="photo"></img>
       </div>
     </div>
   ))
