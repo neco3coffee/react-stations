@@ -1,0 +1,77 @@
+body {
+  margin: 0;
+}
+.top {
+  background-color: #c0c0c0;
+  font-size: 2rem;
+  text-align: center;
+}
+.main {
+  display: flex;
+  margin: 1rem;
+  border-bottom: 1px solid black;
+}
+.leftMenu {
+  display: flex;
+  width: 60%;
+  height: 15em;
+  font-size: 1.5rem;
+  align-items: center;
+  justify-content: center;
+}
+.rightMenu {
+  width: 40%;
+}
+.photo {
+  display: block;
+  width: 100%;
+  height: 400px;
+  object-fit: cover;
+}
+.btn {
+  float: right;
+  appearance: none;
+  border: 0;
+  border-radius: 1px;
+  background: #4676d7;
+  color: #fff;
+  margin-top: 0.5rem;
+  margin-bottom: 0.5rem;
+  padding: 4px 16px;
+  font-size: 16px;
+}
+.dogForm {
+  width: 40%;
+  margin: 1rem auto;
+}
+.dogForm select {
+  width: 20rem;
+  margin-left: 1rem;
+}
+.showBtn {
+  float: right;
+  appearance: none;
+  border: 0;
+  border-radius: 1px;
+  background: #4676d7;
+  color: #fff;
+  margin-left: 1rem;
+  padding: 4px 50px;
+  font-size: 16px;
+}
+.flex-container {
+  display: flex;
+  flex-wrap: wrap;
+  margin: 0 auto;
+  align-items: center;
+  justify-content: center;
+}
+.image-wrap {
+  margin: 20px 30px;
+}
+.image-wrap img {
+  display: block;
+  width: 400px;
+  height: 300px;
+  object-fit: cover;
+}
