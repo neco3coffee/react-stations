@@ -19,6 +19,7 @@ module.exports = {
   parser: '@babel/eslint-parser',
   plugins: ['react', 'prettier', 'import', 'react-hooks'],
   rules: {
+    'react/prop-types': 'off',
     'react/jsx-filename-extension': [
       2,
       {
